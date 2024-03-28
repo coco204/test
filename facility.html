@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/facility.css">
+    <!-- <link rel="stylesheet" href="./css/responsive.css"> -->
+
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <title>area-いりふね温泉</title>
+    <!--レスポンシブ-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+
+</head>
+
+
+
+<body>
+    <div class="header">
+        <img src="./img/common-img/header.png" alt="ロゴマーク">
+        <div id="hamburger">
+            <span></span>
+         </div>
+      </header>
+    </div>
+    <div class="sub-main"></div>
+    <!-- アヒルはポジションを指定しているので、幅が変わると崩れる
+        アヒル入りの波にするか、CSSでどうにかするか -->
+    <div>
+        <img class="wave-img" src="./img/common-img/hiyoko_nami.png" alt="トップ波イメージ">
+    </div>
+
+    <ul class="dropdwn">
+        <li><a href="./index.html">ホーム</a></li>
+        <li>施設案内
+          <ul class="dropdwn_menu">
+            <li><a href="#">外観・フロント</a></li>
+            <li><a href="#">浴室</a></li>
+          </ul>
+        </li>
+        <li>営業案内
+          <ul class="dropdwn_menu">
+            <li><a href="#">営業時間・料金案内</a></li>
+            <li><a href="#">アクセス</a></li>
+          </ul>
+        </li>
+        <li>長風呂してみる？
+          <ul class="dropdwn_menu">
+              <li><a href="#">ランニング</a></li>
+              <li><a href="#">体験入浴</a></li>
+            <li><a href="#">ちょこっと園芸</a></li>
+          </ul>
+        </li>
+    </ul>
+    
+
+
+    <h1 class="heading-h1">施設案内</h1>
+
+
+    <section class="yellow">
+        <div class="grid flex">
+            <div class="card">
+            <div class="tape1"> <!--新しいクラスtapeを作りました　坂口-->
+                <img src="./img/facility-img/card1-img1/card1-1.png">
+            </div>
+                <h2 id="front-lobby">フロント・ロビー</h2>
+                <div class="frame">
+                    <img src="./img/facility-img/card1-img1/card1-2.jpg" id="bigimg">
+                </div>
+            <!--画像の入れ方に間違いはないですか？坂口↑↓-->
+                <ul class="img-box flex">
+                    <li class="li"><img src="./img/facility-img/card1-img2/card1-2.jpg" class="thumb"
+                            data-image="./img/facility-img/card1-img2/card1-2.jpg"></li>
+                    <li class="li"><img src="./img/facility-img/card1-img2/card1-3.jpg" class="thumb"
+                            data-image="./img/facility-img/card1-img2/card1-3.jpg"></li>
+                </ul>
+                <div id="text-box">
+                    フロント式、各所に「手すり」を設置しておりますので<br>
+                    安心してご利用いただけます。
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="tape2">
+                    <img src="./img/facility-img/card2-img1/card2-1.png">
+                </div>
+                <h2>外観</h2>
+                <div class="frame">
+                    <img src="./img/facility-img/card2-img1/card2-2.jpg" id="bigimg-1">
+                </div>
+            
+                <ul class="img-box flex">
+                    <li class="li"><img src="./img/facility-img/card2-img2/card2-2.jpg" class="thumb-1"
+                            data-image="./img/facility-img/card2-img2/card2-2.jpg"></li>
+                    <li class="li"><img src="./img/facility-img/card2-img2/card2-3.jpg" class="thumb-1"
+                            data-image="./img/facility-img/card2-img2/card2-3.jpg"></li>
+                    <li class="li"><img src="./img/facility-img/card2-img2/card2-4.jpg" class="thumb-1"
+                            data-image="./img/facility-img/card2-img2/card2-4.jpg"></li>
+                </ul>
+                <div id="text-box-1">
+                    いりふね温泉の外観をご紹介します。
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="tape3">
+                    <img src="./img/facility-img/card3-img1/card3-1.png">
+                </div>
+                <h2>脱衣室</h2>
+                <div class="frame">
+                    <img src="./img/facility-img/card3-img1/card3-2.jpg" id="bigimg-2">
+                </div>
+            
+                <ul class="img-box flex">
+                    <li class="li"><img src="./img/facility-img/card3-img2/card3-2.jpg" class="thumb-2"
+                            data-image="./img/facility-img/card3-img2/card3-2.jpg"></li>
+                    <li class="li"><img src="./img/facility-img/card3-img2/card3-3.jpg" class="thumb-2"
+                            data-image="./img/facility-img/card3-img2/card3-3.jpg"></li>
+                    <li class="li"><img src="./img/facility-img/card3-img2/card3-4.jpg" class="thumb-2"
+                            data-image="./img/facility-img/card3-img2/card3-4.jpg"></li>
+                    <li class="li"><img src="./img/facility-img/card3-img2/card3-5.jpg" class="thumb-2"
+                            data-image="./img/facility-img/card3-img2/card3-5.jpg"></li>
+                </ul>
+                <div id="text-box-2">
+                    脱衣室には、ベビーベッドやマッサージ機も完備しております。
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="tape4">
+                    <img src="./img/facility-img/card4-img1/card4-1.png">
+                </div>
+                <h2>飲食コーナー</h2>
+                <div class="frame">
+                    <img src="./img/facility-img/card4-img1/card4-2.jpg" id="bigimg-3">
+                </div>
+            
+                <ul class="img-box flex">
+                    <li class="li"><img src="./img/facility-img/card4-img2/card4-2.jpg" class="thumb-3"
+                            data-image="./img/facility-img/card4-img2/card4-2.jpg"></li>
+                    <li class="li"><img src="./img/facility-img/card4-img2/card4-3.jpg" class="thumb-3"
+                            data-image="./img/facility-img/card4-img2/card4-3.jpg"></li>
+                    <li class="li"><img src="./img/facility-img/card4-img2/card4-4.jpg" class="thumb-3"
+                            data-image="./img/facility-img/card4-img2/card4-4.jpg"></li>
+                    <li class="li"><img src="./img/facility-img/card4-img2/card4-5.jpg" class="thumb-3"
+                            data-image="./img/facility-img/card4-img2/card4-5.jpg"></li>
+                    
+                </ul>
+                <div id="text-box-3">
+                    お風呂以外にも「食べる楽しみ」や「飲む楽しみ」<br>沢山の楽しみを見つけてください。
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="blue">
+        <div class="card">
+            <div class="tape5">
+                <img src="./img/facility-img/card5-img1/card5-1.png">
+            </div>
+            <h2 id="bathroom">浴室</h2>
+            <p>いりふね温泉のお風呂は「月替り風呂」</p>
+            <p>左右の浴室が1ヶ月おきに男女入れ替わります</p><br><br>
+
+            <img src="./img/facility-img/card5-img1/card5-2.png" alt="浴室案内">
+            <!--
+            <img src="./img/いりふね温泉ロゴ.png" alt="">
+            <img src="./img/いりふね温泉ロゴ.png" alt="">
+            -->
+            
+            <div class="flex justify">
+                <div class="kita">
+                <img src="./img/facility-img/card5-img1/card5-3.png" alt="北側">
+                </div>
+                <div class="minami">
+                <img src="./img/facility-img/card5-img1/card5-4.png" alt="南側">
+                </div>
+            </div><br>
+
+            <p>各所に手すりを設置しております。安心してご入浴ください</p>
+
+            <h2>各種風呂</h2>
+
+
+            <div class="frame">
+                <img src="./img/facility-img/card5-img1/card5-5.jpg" id="bigimg-4">
+            </div>
+        
+            <ul class="img-box flex">
+                <li class="li"><img src="./img/facility-img/card5-img2/card5-5.jpg" class="thumb-4"
+                    data-image="./img/facility-img/card5-img2/card5-5.jpg">
+                </li>
+                <li class="li"><img src="./img/facility-img/card5-img2/card5-6.jpg" class="thumb-4"
+                    data-image="./img/facility-img/card5-img2/card5-6.jpg">
+                </li>
+                <li class="li"><img src="./img/facility-img/card5-img2/card5-7.jpg" class="thumb-4"
+                    data-image="./img/facility-img/card5-img2/card5-7.jpg">
+                </li>
+                <li class="li"><img src="./img/facility-img/card5-img2/card5-8.jpg" class="thumb-4"
+                    data-image="./img/facility-img/card5-img2/card5-8.jpg">
+                </li>
+                <li class="li"><img src="./img/facility-img/card5-img2/card5-9.jpg" class="thumb-4"
+                    data-image="./img/facility-img/card5-img2/card5-9.jpg">
+                </li>
+                <li class="li"><img src="./img/facility-img/card5-img2/card5-10.jpg" class="thumb-4"
+                    data-image="./img/facility-img/card5-img2/card5-10.jpg">
+                </li>
+            </ul>
+            <div id="text-box-4">
+                創業50年の古き良き温泉。<br><br>泉質には多くの効能があり、心だけでなく身体も癒してくれます。
+               
+            </div>
+        </div>
+    </section>
+
+    <div class="nami"></div>
+    <footer>
+        <div class="footerlogo">
+            <img src="./img/common-img/header.png" alt="ロゴマーク">
+        </div>
+        <ul class="footer-list">
+            <li><a href="index.html">ホーム</a>
+            </li>
+            <li><a href="facility.html">施設案内</a>
+            </li>
+            <li><a href="guide.html">営業案内</a>
+            </li>
+            <li><a href="detail.html">長風呂してみる？</a>
+            </li>
+        </ul>
+        <p class="copy-right">
+            &copy;IIRIFUNE2021
+        </p>
+    </footer>
+
+
+    <script type="text/javascript" src="./js/index.js"></script>
+
+</body>
+</html>

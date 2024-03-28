@@ -1,0 +1,492 @@
+@charset "utf-8";
+
+/*=============================
+fadeIn
+=============================*/
+
+/* 下からフェードイン  */
+.fadeIn {
+  /* transition: 2s; */
+  opacity: 0;
+}
+
+.fadeIn.animated {
+  opacity: 1;
+  transform: translate(0, -20px);
+	transition: all 1s ease-out;
+}
+
+/* 左からフェードイン */
+/* .slide-left {
+	opacity: 0;
+}
+.slide-left.animated {
+  opacity: 1;
+  transform: translate(150px, 0);
+	transition: all 1s ease-out;
+
+} */
+
+
+/* 右からフェードイン */
+/* .slide-right {
+	opacity: 0;
+}
+.slide-right.animated {
+  opacity: 1;
+  transform: translate(-150px, 0);
+	transition: all 1s ease-out;
+} */
+
+/*=============================
+notice
+=============================*/
+/* .notice {
+} */
+.notice-box {
+  width: 60%;
+  background-color: #feffc6;
+  margin: 70px auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.notice-box h2 {
+  text-align: center;
+  padding-bottom: 5px;
+  margin: 10px auto;
+}
+.notice-text-box {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+
+/*=============================
+top-blue
+=============================*/
+.top-blue {
+  width: 100%;
+  /* もし崩れそうであればimgの高さを変更する */
+  height: 1250px;
+  background-image: url('../img/index-img/topbluenami+.png');
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.space  {
+  height: 200px;
+}
+.text-box {
+  margin: 50px auto;
+  font-size: 18px;
+  line-height: 24px;
+}
+.text-box p {
+  /* margin: 20px auto; */
+  line-height: 1.7;
+}
+
+
+/*=============================
+information
+=============================*/
+.information {
+  margin: 100px auto 0px;
+}
+.facility-information, .business-information {
+  width: 65vw;
+  border: 10px solid #e9e026;
+  border-radius: 50px;
+  margin: 50px auto;
+  align-items: center;
+
+}
+.facility-information img, .business-information img {
+  box-sizing: border-box;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+
+
+.inner-text {
+  text-align: center;
+  margin: 0 auto;
+}
+.inner-text h2 {
+  margin: 20px;
+  font-size: 32px;
+}
+.inner-text p {
+  margin: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.inner-text a {
+  padding: 10px 20px;
+  background-color: #e9e026;
+  border-radius: 50px;
+}
+
+
+
+/*=============================
+sub-information noguti
+=============================*/
+.sub-information{
+  display: flex;
+  text-align: center;
+  width: 900px;
+  height: 500px;
+  margin: auto;
+}
+.sub-left{
+  background-image: url('../img/nagaburo-bluecloud.png');
+  background-repeat: no-repeat;
+  width: 600px;
+  height: 375px;
+  display: block;
+}
+.click-button02 {
+  text-align: center;
+  align-items: center;
+  width: 130px;
+  line-height: 15px;
+  margin: 5px auto;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #29bcff;
+  border-radius: 50vh;
+}
+.sub-right img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 10px solid white;
+  box-sizing: border-box;
+}
+.sub-right a{
+  color: #000;
+}
+.sub-right p:nth-child(1){
+  transform: translate(120px,-80px);
+}
+.sub-right p:nth-child(2){
+  transform: translate(-55px,-150px);
+}
+.sub-right p:nth-child(3){
+  transform: translate(120px,-220px);
+}
+
+
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.main { display: block !important; }
+.sp { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .main { display: none !important; }
+    .sp { display: block !important; }
+}
+
+@media (max-width: 1024px) {
+   
+ }
+ 
+ @media (max-width: 670px) {
+  .sp {
+    width: 100vw;
+    position: relative;
+  }
+  a {
+    margin-right: 0px;
+  }
+  /* .dropdwn>li{
+    display: none;
+  } */
+  .wave-img {
+    display: none;
+  }
+/*=============================
+notice
+=============================*/
+  .notice {
+    /* いいのか？ */
+    margin-top: 150px;
+  }
+
+  .notice-box {
+    width: 80%;
+  }
+
+  .notice-text-box {
+    width: 100%;
+    white-space: nowrap;
+  }
+/*=============================
+top-blue
+=============================*/
+  .top-img {
+    width: 90%;
+  }
+
+  .top-blue {
+    height: 1000px;
+  }
+/*=============================
+information
+=============================*/
+  .facility-information, .business-information {
+  width: 80vw;
+  height: 170px;
+
+}
+.facility-information img, .business-information img {
+  width: 160px;
+  height: 170px;
+  padding: 5px;
+}
+
+.inner-text {
+  margin-bottom: 20px;
+}
+
+.inner-text h2 {
+  font-size: 18px;
+}
+.inner-text p {
+  font-size: 14px;
+}
+.inner-text a {
+  font-size: 8px;
+  margin-bottom: 15px;
+}
+/*=============================
+sub-information noguti
+=============================*/
+.sub-information {
+  display: block;
+  width: auto;
+  height: auto;
+}
+.sub-left {
+  width: auto;
+  height: auto;
+}
+.sub-left img {
+  width: 350px;
+}
+.sub-right {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 5%;
+
+}
+.sub-right img {
+  width: 120px;
+  height: 120px;
+}
+
+.sub-right p:nth-child(1){
+  transform: translate(0,0);
+}
+.sub-right p:nth-child(2){
+  transform: translate(0,0);
+}
+.sub-right p:nth-child(3){
+  transform: translate(0,0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================
+HAMBURGER
+=============================*/
+/* .blue-bowl {
+  width: 100px;
+  height: 100px;
+  background-color: #29bcff;
+  border-radius: 50%;
+    margin-left: 320px;
+  z-index: 190;
+  position: fixed;
+} */
+.btn-trigger {
+  /* margin-top: 0px; */
+  margin-left: 320px;
+  width: 50px;
+  height: 44px;
+  cursor: pointer;
+  z-index: 200;
+  position: fixed;
+  /* background-color: #29bcff;
+  padding: 20px;
+  border-radius: 50%; */
+}
+.btn-trigger span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.btn-trigger, .btn-trigger span {
+  display: inline-block;
+  transition: all .5s;
+  box-sizing: border-box;
+}
+.btn-trigger span:nth-of-type(1) {
+  top: 0;
+}
+.btn-trigger span:nth-of-type(2) {
+  top: 20px;
+}
+.btn-trigger span:nth-of-type(3) {
+  bottom: 0;
+}
+
+/*=============================
+#btn19
+=============================*/
+#btn19::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  content: '';
+  
+  width: 84px;
+  height: 84px;
+
+  margin: -45px 0 0 -45px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  transition: all .75s;
+}
+#btn19.active span:nth-of-type(1) {
+  -webkit-transform: translateY(20px) rotate(-45deg);
+  transform: translateY(20px) rotate(-45deg);
+}
+#btn19.active span:nth-of-type(2) {
+  left: 60%;
+  opacity: 0;
+  -webkit-animation: active-btn19-bar02 .8s forwards;
+  animation: active-btn19-bar02 .8s forwards;
+}
+@-webkit-keyframes active-btn19-bar02 {
+  100% {
+    height: 0;
+  }
+}
+@keyframes active-btn19-bar02 {
+  100% {
+    height: 0;
+  }
+}
+#btn19.active span:nth-of-type(3) {
+  -webkit-transform: translateY(-20px) rotate(45deg);
+  transform: translateY(-20px) rotate(45deg);
+}
+#btn19.active::after {
+  -webkit-animation: active-btn19 .7s .25s forwards;
+  animation: active-btn19 .7s .25s forwards;
+}
+@-webkit-keyframes active-btn19 {
+  0% {
+    border-color: transparent;
+    -webkit-transform: rotate(0);
+  }
+  25% {
+    border-color: transparent #fff transparent transparent;
+  }
+  50% {
+    border-color: transparent #fff #fff transparent;
+  }
+  75% {
+    border-color: transparent #fff #fff #fff;
+  }
+  100% {
+    border-color: #fff;
+    -webkit-transform: rotate(-680deg);
+  }
+}
+@keyframes active-btn19 {
+  0% {
+    border-color: transparent;
+    transform: rotate(0);
+  }
+  25% {
+    border-color: transparent #fff transparent transparent;
+  }
+  50% {
+    border-color: transparent #fff #fff transparent;
+  }
+  75% {
+    border-color: transparent #fff #fff #fff;
+  }
+  100% {
+    border-color: #fff;
+    transform: rotate(-680deg);
+  }
+}
+
+  /*----------------------------
+  * メニュー本体
+  *----------------------------*/
+  .menu{
+    position: fixed;
+    top: 0;
+    /* right: 0; */
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #29bcff;
+  }
+  .menu__item{
+    padding: .5em 1em;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  .menu__item :hover{
+    background :#ddd;
+  }
+
+  
+  /*----------------------------
+  * アニメーション部分
+  *----------------------------*/
+    /* くるっと回転しながら現れる */
+    .menu{
+        transform-origin: top left;
+        transform: rotateZ(-90deg);
+        transition: all .3s ease;
+    }
+    .menu.is-active{
+        transform: rotateZ(0deg);
+    }
+}
+  
+

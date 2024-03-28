@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+.backcolor-yeallow {
+    background-color: #fffb84;
+}
+
+
+.card-box {
+    position: relative;
+    background-color: #fffdce;
+    margin: 50px 20px 120px 20px;
+}
+
+.card-box-inner {
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    left: 39%;
+    /* right: 50%; */
+    top: -3%; 
+    letter-spacing: 2px;
+    width: 320px;
+    padding: 15px 5px;
+    border-radius: 35px;
+    background-color: #ffffff;
+}
+
+.space {
+    /* background-color: #000; */
+    height: 100px;
+}
+
+.heading {
+    text-decoration:underline;
+    text-decoration-color:#000;
+    margin-bottom: 50px;
+}
+
+.title-blue {
+    color: #049bfc;
+}
+
+
+.text-blue-inner{
+    
+    /* レスポンシブ時変更必須 */
+    margin: 0 38%;
+
+    text-align: left;
+    color: #049bfc;
+}
+/* ここから金燕がCSSした分です */
+.backcolor-yeallow .main_img{
+    margin: 50px auto 0;
+    padding-left: 22%;
+    padding-bottom: 20px;
+}
+.title-blue{
+    margin-bottom: 30px;
+}
+.card-box-inner p{
+    font-weight:bold;  
+}
+.text-blue-inner{
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.heading {
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.card1-1{
+    margin-bottom: 20px;
+}
+.marathon p{
+    margin-bottom: 50px;
+}
+.runner{
+    margin-top: 60px;
+}
+.card_box_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: auto;
+}
+.card_box{
+    padding: 0 10px;
+    margin-bottom: 50px;
+}
+.card_title{
+   color: #049bfc;
+} 
+.container_heading{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+.container_heading h3{
+    margin-top: 50px;
+    margin-right: 60px;
+}
+
+.drinking_corner{
+    letter-spacing: 2px;
+    width: 780px;
+    padding: 25px 5px;
+    border-radius: 35px;
+    
+   margin: auto;
+   margin-top: 10px;
+   color: #049bfc;
+   margin-bottom: 60px;
+   border: 6px #049bfc solid;
+} 
+
+.container_heading img{
+    margin-right: 50px;
+    width: 150px;
+    height: 150px;
+}
+
+element.style {
+    background-color: #fffb84;
+}
+   

@@ -1,0 +1,226 @@
+@charset "utf-8";
+/*=============================
+全体共通 header main menubar heading-h1 footer
+=============================*/
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .flex {
+    display: flex;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  a {
+    /* color:#000; */
+    color:#fff;
+    text-decoration: none;
+    font-weight: bold;
+
+    /* ↓2021/08/19末永消しました。支障あれば教えてください↓ */
+    /* margin-right: 5px; */
+  }
+  /*　↓↓　追加しました。2021/08/13野口　↓↓*/
+  body {
+    font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','YuGothic','Yu Gothic','Hiragino Sans','ヒラギノ角ゴシック','メイリオ', 'Meiryo','ＭＳ Ｐゴシック','MS PGothic';
+    font-feature-settings: "palt";
+    font-weight: bold;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  /*　↑↑　追加しました。2021/08/13野口　↑↑　*/
+/*=============================
+header
+=============================*/
+.header {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+/*=============================
+main sub-main
+=============================*/
+.main {
+  height: 40vw;/*　変更しました。2021/08/11野口 */
+  /* height: 600px; */
+  width:100%;
+  background-image: url('../img/common-img/main.png');
+  background-size: cover;
+  margin:0 auto;
+}
+.sub-main {
+  height: 240px;
+  width:100%;
+  background-image: url('../img/common-img/main-sub.png');
+  background-size: cover;
+  margin:0 auto;
+
+}
+
+.wave-img {
+  position: relative;
+  width: 100%;
+  /* height: 200px; */
+  height: 130px;
+  margin-top: -55px;
+
+}
+/*　↑↑　変更しました。2021/08/11野口 ↑↑　*/
+/*　↑↑　変更しました。2021/08/19末永 ↑↑　*/
+
+
+/*=============================
+menu-bar-共通
+=============================*/
+.dropdwn{
+  margin-top: -80px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+}
+
+ul{
+  text-align: center;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  color: #fff;
+}
+li{
+  max-width: calc(1200px/4);
+  position: relative;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdwn>li{
+  width: 1200px;
+  margin: 1px;
+  /* background: #7ba5ff; */
+  display: inline;
+}
+
+.dropdwn_menu{
+  width: 100%;
+  display: none;
+  position: absolute;
+  margin-left: -5px;
+  margin-top: 5px;
+  padding: 0;
+  
+  /* background: rgb(75, 100, 209); */
+  background: #6fd2fe;
+  /*　↑↑　変更しました。2021/08/17末永 ↑↑　*/
+
+}
+
+.dropdwn_menu li{
+  width: 100%;
+}
+
+.dropdwn_menu li a{
+  padding: 5px 0;
+  margin: -5px 5px -5px -5px;
+  /* margin:0 auto; */
+  display: block;
+  color: #fff;
+}
+
+li a:hover{
+  background: #b3d7ff;
+  color: rgb(65, 65, 65);
+}
+
+/*=============================
+heading-h1
+=============================*/
+.heading-h1 {
+  text-align: center;
+  padding: 50px;
+  margin: 30px auto;
+  font-size: 32px;
+}
+
+
+/*=============================
+footer-共通
+=============================*/
+.nami {
+  background-image: url('../img/common-img/footer+.png');
+  width: 100%;
+  height: 0px;
+  padding-top: 18%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+footer {
+  background-color: #70d2ff;
+  text-align: center;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.footerlogo{
+  width: 300px;
+}
+
+.footer-list {
+  margin-bottom: 50px;
+  margin-top: 15px;
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.footer-list li{
+  flex-grow: 1;
+}
+.footer-list li + li {
+  border-left: 2px solid white;
+} 
+
+.footer-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 18px;
+}
+
+
+/*　レスポンシブ　*/
+
+ @media (max-width: 670px) {
+ 
+  .dropdwn>li{
+      display: none;
+  }
+     footer {
+    height: 120px;
+  }
+  .footerlogo img{
+    width: 300px;
+    margin-left: 5px;
+  }
+  .footer-list {
+    margin: 10px auto;
+    width: 300px;
+    margin-left: 65px;
+  }
+  .footer-list a {
+    font-size: 10px;
+  }
+  .copy-right{
+    margin: 10px 10px 10px 0;
+  }
+ }
